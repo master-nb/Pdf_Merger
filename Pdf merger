@@ -1,0 +1,8 @@
+import pypdf
+
+All_pdf = ['1.pdf','2.pdf','3.pdf']
+merger = pypdf.PdfMerger()
+for i in All_pdf:
+    merger.append(i)
+merger.write('New.pdf')
+merger.close()
